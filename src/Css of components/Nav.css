@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.nav {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+
+  div.sideBarUp {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    border-radius: 10px;
+    padding: 10px 10px;
+    >div.logo>a>img{
+        width: 100px;
+    }
+    >a{
+        padding: 10px 14px;
+        color: #b3b3b3;
+        font-size: 16px;
+        font-weight: 600;
+        >i{
+            font-size: 20px;
+            margin-right: 10px;
+        }
+    }
+    
+  }
+}
