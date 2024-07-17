@@ -1,0 +1,43 @@
+div.main {
+  margin-left: 350px;
+  background-color: #181818;
+  height: 100vh;
+  > div.topNav {
+    padding: 13px 30px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div.prevbtn > button {
+      border: 1px solid rgba(0, 0, 0, 0.7);
+      border-radius: 50%;
+      padding: 10px;
+      margin: 5px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding-left: 14px;
+      padding-right: 14px;
+      > i {
+        width: 8px;
+      }
+    }
+    > div.loginbtn {
+      > button.sign {
+        padding: 10px;
+        margin: 10px;
+        border: 0;
+        color: white;
+        background-color: transparent;
+        font-weight: 800;
+        color: #b3b3b3;
+      }
+      > button.log {
+        padding: 13px 32px;
+        margin: 10px;
+        border: 0;
+        border-radius: 30px;
+        font-weight: 800;
+      }
+    }
+  }
+}
