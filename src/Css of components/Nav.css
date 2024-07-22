@@ -47,44 +47,59 @@ div.nav {
         margin-right: 10px;
       }
     }
-    > span.spec {
+    span.spec {
       padding-left: 135px;
     }
     > div.navbarScroll {
-      height: 90px;
-      overflow-y: auto;
+      height: 150px;
+      overflow-y: scroll;
       margin: 15px;
       margin-left: 5px;
+
+      div.scroll {
+        background-color: #302f2f;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 30px 15px;
+        > h4 {
+          color: #fff;
+          font-size: 15px;
+        }
+        > p {
+          color: #fff;
+          font-size: 12px;
+          margin: 12px 0;
+        }
+        > a.button {
+          border: 0;
+          padding: 8px 15px;
+          border-radius: 20px;
+          width: 150px;
+          text-align: center;
+          background-color: white;
+          color: black;
+          margin: 10px;
+          font-weight: 550;
+          outline: 0;
+          font-size: 14px;
+        }
+      }
     }
-    div.scroll {
-      background-color: #302f2f;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      margin-top: 10px;
-      padding: 30px 15px;
-      > h4 {
-        color: #fff;
-        font-size: 15px;
-      }
-      > p {
-        color: #fff;
-        font-size: 12px;
-        margin: 12px 0;
-      }
-      > a.button {
-        border: 0;
-        padding: 8px 15px;
-        border-radius: 20px;
-        width: 150px;
-        text-align: center;
-        background-color: white;
-        color: black;
-        margin: 10px;
-        font-weight: 550;
-        outline: 0;
-        font-size: 14px;
-      }
+    > div.navbarScroll::-webkit-scrollbar {
+      width: 16px;
     }
+    > div.navbarScroll::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    > div.navbarScroll::-webkit-scrollbar-thumb {
+      background: transparent;
+      border: 4px solid #111;
+    }
+    > div.navbarScroll:hover::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
     div.privacy {
       padding: 0 10px;
       margin: 35px 0;
@@ -94,7 +109,7 @@ div.nav {
         color: #818888;
       }
     }
-    a.languagebtn{
+    a.languagebtn {
       border: 1px solid #818888;
       border-radius: 20px;
       width: 120px;
@@ -104,7 +119,7 @@ div.nav {
       padding: 10px;
       font-size: 14px;
       font-weight: 600;
-      >i{
+      > i {
         font-size: 18px;
       }
     }
