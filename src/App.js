@@ -4,7 +4,7 @@ import "./App.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login.js";
-import Layout from "./Components/Layout.js";
+import Main from "./Components/Main.js";
 
 function App() {
   return (
@@ -14,28 +14,20 @@ function App() {
         <Route
           path="/"
           element={
-            <Layout>
+            <Main>
               <div>Home</div>
               <div>Home</div>
               <div>Home</div>
-            </Layout>
+            </Main>
           }
         />
-        <Route
-          path="/search"
-          element={
-            <Layout searchInput={true}>
-              <div>Search</div>
-              <div>Search</div>
-            </Layout>
-          }
-        />
+        <Route path="/search"  element={<Main searchInput={true}></Main>} />
         <Route
           path="/createlibrary"
           element={
-            <Layout>
+            <Main>
               <div>Create library</div>
-            </Layout>
+            </Main>
           }
         />
       </Routes>

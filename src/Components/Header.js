@@ -13,7 +13,17 @@ function Header({ children, searchInput = false }) {
             <i className="fa-solid fa-chevron-right"></i>
           </button>
         </div>
-        {searchInput ? <input></input> : ""}
+        {searchInput ? (
+          <div className="srch">
+             <i className="fa-solid fa-magnifying-glass"></i> 
+            <input
+              className="searchholder"
+              placeholder=" What do you want to play?"
+            />
+          </div>
+        ) : (
+          ""
+        )}
         <div className="loginbtn">
           <a href="" className="sign">
             Sign Up

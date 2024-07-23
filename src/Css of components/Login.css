@@ -1,0 +1,105 @@
+div.login {
+  background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%)
+    #121212;
+}
+
+.login-container {
+  text-align: center;
+  background-color: #121212;
+  padding-top: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 720px;
+  height: 920px;
+}
+
+.login-logo img {
+  width: 50px;
+}
+.login-logo{
+    display: flex;
+    justify-content: center;
+}
+.login-logo i{
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 24px;
+    width: 20px;
+    height: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  border-radius: 50%;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 260px;
+  height: 40px;
+  text-align: center;
+}
+
+.login-button.google {
+}
+
+.login-button.facebook {
+}
+
+.login-button.apple {
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 260px;
+  height: 40px;
+}
+
+.login-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.line {
+  margin: 32px 100px;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  border-top: 1px solid rgb(41, 41, 41);
+}
