@@ -1,12 +1,16 @@
 div.login {
   background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgb(0, 0, 0) 100%)
     #121212;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login-container {
   text-align: center;
   background-color: #121212;
-  padding-top: 200px;
+  padding-top: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   width: 720px;
@@ -14,23 +18,24 @@ div.login {
 }
 
 .login-logo img {
-  width: 50px;
+  width: 40px;
+  margin: 30px;
 }
-.login-logo{
-    display: flex;
-    justify-content: center;
+.login-logo {
+  display: flex;
+  justify-content: center;
 }
-.login-logo i{
-    width: 100%;
-    padding-top: 32px;
-    padding-bottom: 24px;
-    width: 20px;
-    height: 20px;
+
+.login-logo i {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 24px;
+  transform: translateY(-50%);
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
 .login-buttons {
@@ -42,13 +47,18 @@ h1 {
   border: 1px;
   border-radius: 50%;
 }
+.login-buttons img {
+  padding: 8px;
+}
 
 .login-button {
-  width: 100%;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+
+  padding: 22px;
   margin-bottom: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
   background-color: transparent;
@@ -68,10 +78,16 @@ h1 {
 .login-button.apple {
 }
 
-.login-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
+.login-form p {
+  padding-bottom: 9px;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 .login-form input {
   width: 100%;
@@ -82,6 +98,7 @@ h1 {
   font-size: 16px;
   width: 260px;
   height: 40px;
+  background-color: transparent;
 }
 
 .login-form button {
@@ -102,4 +119,52 @@ h1 {
   border-left: none;
   border-image: initial;
   border-top: 1px solid rgb(41, 41, 41);
+}
+button.login-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #1ed760;
+  color: black;
+  border: 1px solid;
+  width: 260px;
+  height: 40px;
+  text-align: center;
+font-weight: 700;
+}
+
+.signup-link {
+  color: white;
+  text-decoration: underline;
+  padding-left: 4px;
+}
+.acc {
+  color: var(--text-subdued,#6a6a6a);
+}
+div.logfooter {
+  background-color: #121212;
+  margin-top: 40px;
+  width: 100%;
+  padding: 32px;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(167, 167, 167);
+  font-weight: 400;
+}
+.forgetPassword {
+  color: white;
+  text-decoration: underline;
+}
+div.logfooter a {
+  color: rgb(167, 167, 167);
+  text-decoration: underline;
+}
+ button:hover{
+  border: 1px solid white;
 }
