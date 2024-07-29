@@ -1,39 +1,20 @@
 import "../Css of components/Header.css";
 import { Link, Route, Routes } from "react-router-dom";
 
-function Header({ children, searchInput = false }) {
+function Header() {
   return (
-    <div className="main">
+    <div className="header">
       <div className="topNav">
-        <div className="prevbtn">
-          <button>
-            <i className="fa-solid fa-chevron-left"></i>
-          </button>
-          <button>
-            <i className="fa-solid fa-chevron-right"></i>
-          </button>
-        </div>
-        {searchInput ? (
-          <div className="srch">
-             <i className="fa-solid fa-magnifying-glass"></i> 
-            <input
-              className="searchholder"
-              placeholder=" What do you want to play?"
-            />
-          </div>
-        ) : (
-          ""
-        )}
         <div className="loginbtn">
-          <a href="" className="sign">
+          <Link to="/signup" className="sign">
             Sign Up
-          </a>
+          </Link>
           <Link to="/login" className="log">
             Log in
           </Link>
         </div>
       </div>
-      <div className="holder">{children}</div>
+      <div className="holder"></div>
     </div>
   );
 }

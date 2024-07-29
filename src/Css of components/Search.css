@@ -1,0 +1,24 @@
+.searchholder {
+    width: 350px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 245px;
+  }
+  .searchholder::placeholder {
+    color: #999;
+  }
+  div.srch {
+    position: relative;
+    > i {
+      position: absolute;
+      top: 50%;
+      left: 13px;
+      transform: translateY(-50%);
+    }
+  }

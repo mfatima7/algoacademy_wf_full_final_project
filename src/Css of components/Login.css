@@ -66,17 +66,9 @@ h1 {
   border: 1px solid white;
   width: 260px;
   height: 40px;
-  text-align: center;
+  
 }
 
-.login-button.google {
-}
-
-.login-button.facebook {
-}
-
-.login-button.apple {
-}
 
 .login-form {
   display: flex;
@@ -120,7 +112,7 @@ h1 {
   border-image: initial;
   border-top: 1px solid rgb(41, 41, 41);
 }
-button.login-btn{
+button.login-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +128,7 @@ button.login-btn{
   width: 260px;
   height: 40px;
   text-align: center;
-font-weight: 700;
+  font-weight: 700;
 }
 
 .signup-link {
@@ -145,7 +137,7 @@ font-weight: 700;
   padding-left: 4px;
 }
 .acc {
-  color: var(--text-subdued,#6a6a6a);
+  color: var(--text-subdued, #6a6a6a);
 }
 div.logfooter {
   background-color: #121212;
@@ -157,14 +149,29 @@ div.logfooter {
   color: rgb(167, 167, 167);
   font-weight: 400;
 }
-.forgetPassword {
-  color: white;
-  text-decoration: underline;
-}
 div.logfooter a {
   color: rgb(167, 167, 167);
   text-decoration: underline;
 }
- button:hover{
+button:hover {
   border: 1px solid white;
+}
+
+
+
+@media (max-width: 768px) {
+  .login, .signup {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .login-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .login-button {
+    width: 100%;
+  }
 }

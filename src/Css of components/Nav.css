@@ -3,11 +3,12 @@ body {
 }
 div.nav {
   width: 350px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   padding: 10px;
+  z-index: -2;
 
   > div.sideBarUp {
     display: flex;
@@ -33,7 +34,7 @@ div.nav {
     margin-top: 10px;
     background-color: #111;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 55px 10px;
     padding-bottom: 50px;
     > a {
       padding: 10px 14px;
@@ -47,21 +48,17 @@ div.nav {
         margin-right: 10px;
       }
     }
-    span.spec {
-      padding-left: 135px;
-    }
     > div.navbarScroll {
-      height: 150px;
-      overflow-y: scroll;
+      height: 90px;
       margin: 15px;
       margin-left: 5px;
 
+      
+
       div.scroll {
-        background-color: #302f2f;
+        background-color: #1f1f1f;
         border-radius: 10px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        padding: 30px 15px;
+        padding: 23px 15px;
         > h4 {
           color: #fff;
           font-size: 15px;
@@ -123,5 +120,24 @@ div.nav {
         font-size: 18px;
       }
     }
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+  }
+
+  .sideBarUp, .sideBarDn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbarScroll {
+    flex-direction: column;
   }
 }

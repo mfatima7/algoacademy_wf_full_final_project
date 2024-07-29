@@ -1,49 +1,11 @@
-div.main {
-  margin-left: 350px;
-  background-color: #181818;
-  height: 100vh;
+div.header {
   > div.topNav {
-    padding: 5px 30px;
+    padding: 0 30px;
     background-color: #111;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    > div.prevbtn > button {
-      border: 1px solid rgba(0, 0, 0, 0.7);
-      border-radius: 50%;
-      padding: 10px;
-      margin: 5px;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding-left: 14px;
-      padding-right: 14px;
-      > i {
-        width: 8px;
-      }
-    }
-    .searchholder {
-      width: 350px;
-      height: 45px;
-      border-radius: 20px;
-      border: none;
-      padding: 20px 40px;
-      font-size: 14px;
-      color: #fff;
-      background-color: #444;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      margin-right: 245px;
-    }
-    .searchholder::placeholder {
-      color: #999;
-    }
-    div.srch {
-      position: relative;
-      > i {
-        position: absolute;
-        top: 50%;
-        left: 13px;
-        transform: translateY(-50%);
-      }
+    border-radius: 10px 10px 0 0 ;
     }
     div.loginbtn {
       display: flex;
@@ -82,4 +44,5 @@ div.main {
       }
     }
   }
-}
+
+

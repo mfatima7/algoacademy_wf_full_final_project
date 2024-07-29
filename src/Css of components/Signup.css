@@ -1,0 +1,112 @@
+.login-logo {
+  display: flex;
+  justify-content: center;
+}
+.login-logo img {
+  width: 40px;
+  margin: 30px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.email-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+.email-sign p{
+  text-align: justify;
+  width: 300px;
+}
+
+  .email-sign input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff ;
+  }
+
+  button.signup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #1ed760;
+    color: black;
+    border: 1px solid;
+    width: 320px;
+    height: 40px;
+    font-weight: 700;
+  }
+  
+.line-container{
+  display: flex;
+  align-items: center;
+  margin: 20px 0; 
+}
+.line-sign{
+  flex: 1;
+  border-top: 1px solid #fff;
+  width: 100%;
+  font-size: 13px;
+}
+.line-text{
+  margin: 0 10px;
+  text-align: center;
+  white-space: nowrap;
+  width: 100%;
+  
+}
+.login-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px;
+  border-radius: 50%;
+}
+.login-buttons img {
+  padding: 8px;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 260px;
+  height: 40px;
+  
+}
+@media (max-width: 768px) {
+  .signup .email-sign {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .signup .signup-btn {
+    width: 100%;
+  }
+}

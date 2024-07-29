@@ -1,0 +1,9 @@
+.podcasts{
+    background: linear-gradient(to bottom,rgb(42, 26, 219),black);
+    margin-left: 350px;
+}
+.podcasts h1{
+    padding: 80px;
+    text-align: justify;
+    font-size: 50px;
+}

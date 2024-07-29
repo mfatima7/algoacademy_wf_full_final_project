@@ -19,26 +19,16 @@ function Nav() {
       </div>
 
       <div className="sideBarDn">
-        <a href="">
-          <i className="fa-solid fa-book"></i> Your Library{" "}
-          <span className="spec">
-            <i className="fa-solid fa-plus"></i>
-          </span>
-        </a>
+        <Link to="/podcasts">
+        <i className="fa-solid fa-headphones"></i> Podcasts
+        </Link>
         <div className="navbarScroll">
-          <div className="scroll">
-            <h4>Create your first playlist</h4>
-            <p>It's easy,we'll help you</p>
-            <a href="" className="button">
-              Create playlist
-            </a>
-          </div>
           <div className="scroll">
             <h4>Let's find some podcasts to follow</h4>
             <p>We'll keep you updated on new episodes</p>
-            <a href="" className="button">
+            <Link to="/podcasts" className="button">
               Browse podcasts
-            </a>
+            </Link>
           </div>
         </div>
         <div className="privacy">
