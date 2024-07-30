@@ -1,7 +1,9 @@
 import Header from "./Header";
 import Nav from "./Nav";
+import Ariana from "../Components/Singer/Ariana";
 import "../Css of components/Main.css";
 import { image } from "../Images/Images";
+import { Link } from "react-router-dom";
 
 function Main({ children, searchInput = false }) {
   return (
@@ -12,26 +14,25 @@ function Main({ children, searchInput = false }) {
       <div className="artists">
         <h2>Popular artists</h2>
         <div className="artist-list">
-          <div className="artist">
-            {" "}
+          <Link to={"/ArianaGrande"} className="artist">
             <img src={image.ArianaGrande}></img> Ariana Grande
-          </div>
-          <div className="artist">
+          </Link>
+          <Link to={"/DuaLipa"} className="artist">
             {" "}
             <img src={image.DuaLipa}></img> Dua Lipa
-          </div>
-          <div className="artist">
+          </Link>
+          <Link to={"/TheWeeknd"} className="artist">
             {" "}
             <img src={image.TheWeeknd}></img> The Weeknd
-          </div>
-          <div className="artist">
+          </Link>
+          <Link to={"/Tyla"} className="artist">
             {" "}
             <img src={image.Tyla}></img> Tyla
-          </div>
-          <div className="artist">
+          </Link>
+          <Link to={"/Jennie"} className="artist">
             {" "}
             <img src={image.Jennie}></img> Jennie
-          </div>
+          </Link>
         </div>
       </div>
       <div className="albums">
@@ -54,8 +55,8 @@ function Main({ children, searchInput = false }) {
           <p className="author" >Tyla</p>
           </div>
           <div className="album">
-          <img src={image.JennieA}></img> Jennie
-          <p className="author" >You & Me</p>
+          <img src={image.JennieA}></img> You & Me
+          <p className="author" >Jennie</p>
           </div>
         </div>
       </div>

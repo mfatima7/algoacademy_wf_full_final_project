@@ -1,5 +1,12 @@
+.music{
+    display: flex;
+    flex-direction: column;
+    
+  
+}
 .music_banner{
     display: flex;
+    flex-direction: row;
     position: relative;
     margin-left: 350px;
     background: linear-gradient(to bottom,rgb(219, 26, 26),black);
@@ -11,6 +18,40 @@
     margin: 40px;
 }
 
-.music_banner h1{
+.music_banner h2{
     align-self: center;
+    justify-content: center;
+    height: 100%;
+}
+.music-list{
+    width: 500px;
+    position: relative;
+    left: 30%;
+    
+
+}
+.m-list{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.m-list> img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.m-list>button{
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+.m-list>button>i{
+    width: 20px;
+}
+.music>.player{
+    display: none;
+}
+.displayed{
+    display: block;
 }

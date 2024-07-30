@@ -129,6 +129,7 @@ div.nav {
 @media (max-width: 768px) {
   .nav {
     width: 100%;
+
   }
 
   .sideBarUp, .sideBarDn {
